@@ -660,6 +660,7 @@ class NirspecPipeline:
 
                 _do_pad = (pad > 0) | (source_ids is not None) | positive_ids
                 _do_pad |= slitlet_ids is not None
+                print(msametfl)
                 if _do_pad:
                     if (msametfl is not None) & (os.path.exists(msametfl)):
                         msametfl = pad_msa_metafile(
